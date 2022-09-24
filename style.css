@@ -1,0 +1,52 @@
+@keyframes kolorki {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+  }
+
+div#div1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(129, 117, 117);
+}
+div#div2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(99, 91, 91);
+  text-align: center;
+}
+div#div2 #div3   {
+  position: absolute;
+  top: 20px;
+  left: 33%;
+  width: 33%;
+  height: 50%;
+  background-color: white;
+
+
+}
+table#t1{
+  position:absolute;
+  width: 100%;
+  border: 1px solid black;
+}
+td#t1{
+  text-align: right;
+}
+td#t2{
+  text-align: left;
+}
+img#img1  { 
+  
+}
+p#p1  {
+  color: gold;
+}
