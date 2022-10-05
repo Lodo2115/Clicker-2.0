@@ -1,6 +1,6 @@
 @keyframes pasek {
     0%   {width: 0%; background-color: green;}
-    100%   {width: 85%; background-color: green;}
+    100%   {width: 74%; background-color: green;}
 
   }
 #all {
@@ -64,21 +64,46 @@ div#header #gold   {
   background-color: aquamarine;
 }
 
-.g1 { grid-area: g1;margin: 1px solid black; }
+.g1 { grid-area: g1;border: 4px solid rgb(0, 0, 0); }
 
-.g2 { grid-area: g2; }
+.g2 { grid-area: g2;border: 4px solid black; }
 
-.g3 { grid-area: g3; }
+.g3 { grid-area: g3;border: 4px solid black; }
 
-.g4 { grid-area: g4; }
+.g4 { grid-area: g4;border: 4px solid black; }
 
-.g5 { grid-area: g5; }
+.g5 { grid-area: g5;border: 4px solid black; }
 
-.g6 { grid-area: g6; }
+.g6 { grid-area: g6;border: 4px solid black; }
 
-.g7 { grid-area: g7; }
+.g7 { grid-area: g7;border: 4px solid black; }
 
-.g8 { grid-area: g8; }
+.g8 { grid-area: g8;border: 4px solid black; }
 
+#ImgWood {
+  width: 50%;
+  height: 50%;
 
-
+}
+#BWood {
+  position: relative;
+  top: 10%;
+  left: 2.5%;
+  width: 20%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: aquamarine;
+  float: left;
+}
+#pasekDrewno {
+  position: relative;
+  top: 10%;
+  left: 2.5%;
+  z-index: 1;
+  width: 74%;
+  height: 40%;
+  float: left;
+  animation-name: pasek;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
