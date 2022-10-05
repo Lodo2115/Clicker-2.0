@@ -1,6 +1,6 @@
 @keyframes pasek {
-    0%   {width: 0%; background-color: green;}
-    100%   {width: 74%; background-color: green;}
+    0%   {width: 0%; background-color: green;height: 100%;border-radius: 10px;}
+    100%   {width: 100%; background-color: green;height: 100%;border-radius: 10px;}
 
   }
 #all {
@@ -64,21 +64,21 @@ div#header #gold   {
   background-color: aquamarine;
 }
 
-.g1 { grid-area: g1;border: 4px solid rgb(0, 0, 0); }
+.g1 { grid-area: g1;border: 4px solid rgb(0, 0, 0); border-radius: 10px;}
 
-.g2 { grid-area: g2;border: 4px solid black; }
+.g2 { grid-area: g2;border: 4px solid black; border-radius: 10px; }
 
-.g3 { grid-area: g3;border: 4px solid black; }
+.g3 { grid-area: g3;border: 4px solid black; border-radius: 10px; }
 
-.g4 { grid-area: g4;border: 4px solid black; }
+.g4 { grid-area: g4;border: 4px solid black; border-radius: 10px; }
 
-.g5 { grid-area: g5;border: 4px solid black; }
+.g5 { grid-area: g5;border: 4px solid black; border-radius: 10px; }
 
-.g6 { grid-area: g6;border: 4px solid black; }
+.g6 { grid-area: g6;border: 4px solid black; border-radius: 10px; }
 
-.g7 { grid-area: g7;border: 4px solid black; }
+.g7 { grid-area: g7;border: 4px solid black; border-radius: 10px; }
 
-.g8 { grid-area: g8;border: 4px solid black; }
+.g8 { grid-area: g8;border: 4px solid black; border-radius: 10px; }
 
 #ImgWood {
   width: 50%;
@@ -95,15 +95,56 @@ div#header #gold   {
   background-color: aquamarine;
   float: left;
 }
-#pasekDrewno {
+.Ulepsz {
+  position: relative;
+  float: left;
+  background-color: aquamarine;
+  width: 25%;
+  border-radius: 10px;
+}
+.containerW { 
   position: relative;
   top: 10%;
   left: 2.5%;
-  z-index: 1;
-  width: 74%;
-  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gora"
+    "dol";
+  width: 75%;
+  height: 75%;
+  
+}
+
+.dol { grid-area: dol; }
+
+.gora { grid-area: gora; }
+
+#pasekWood {
+  width: 100%;
   float: left;
   animation-name: pasek;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+}
+#WoodInfo {
+  position: absolute;
+  top:0;
+  left: 45%;
+  z-index: 100;
+
+}
+.Timer{
+  position: relative;;
+  top:10%;
+  left:25%;
+  float: left;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
 }
