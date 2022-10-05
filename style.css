@@ -1,21 +1,26 @@
-@keyframes kolorki {
-    0%   {background-color:red;}
-    25%  {background-color:yellow;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red;}
-  }
+@keyframes pasek {
+    0%   {width: 0%; background-color: green;}
+    100%   {width: 85%; background-color: green;}
 
-div#div1 {
+  }
+#all {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(129, 117, 117);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-div#div2 {
+p#p1  {
+  color: gold;
+}
+#imgGold {
   position: absolute;
+  top: 20%;
+}
+
+div#header {
+  position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,30 +28,57 @@ div#div2 {
   background-color: rgb(99, 91, 91);
   text-align: center;
 }
-div#div2 #div3   {
+div#header #gold   {
   position: absolute;
   top: 0;
   left: 33%;
   width: 33%;
-  height: 50%;
+  height: 100%;
   background-color: rgb(99, 91, 91);
-
-
 }
-table#t1{
-  position:absolute;
+#body {
+  position: absolute;;
+  top: 10%;
+  left: 0;
   width: 100%;
-  background-color: rgb(99, 91, 91);
+  height: 100%;
 }
-td#t1{
-  text-align: right;
+
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "g1 g5"
+    "g2 g6"
+    "g3 g7"
+    "g4 g8";
+  width: 100%;
+  height: 90%;
+  padding: 3%;
+
+  background-color: aquamarine;
 }
-td#t2{
-  text-align: left;
-}
-img#img1  { 
-  
-}
-p#p1  {
-  color: gold;
-}
+
+.g1 { grid-area: g1;margin: 1px solid black; }
+
+.g2 { grid-area: g2; }
+
+.g3 { grid-area: g3; }
+
+.g4 { grid-area: g4; }
+
+.g5 { grid-area: g5; }
+
+.g6 { grid-area: g6; }
+
+.g7 { grid-area: g7; }
+
+.g8 { grid-area: g8; }
+
+
+
