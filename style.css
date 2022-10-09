@@ -1,67 +1,68 @@
 @keyframes pasek {
-    0%   {width: 0%; background-color: green;height: 100%;border-radius: 10px;}
-    100%   {width: 100%; background-color: green;height: 100%;border-radius: 10px;}
+  0%   {width: 0%; background-color: green;height: 100%;border-radius: 10px;}
+  100%   {width: 100%; background-color: green;height: 100%;border-radius: 10px;}
 
-  }
+}
 #all {
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 p#p1  {
-  color: gold;
+color: gold;
 }
 #imgGold {
-  position: absolute;
-  top: 20%;
+position: absolute;
+top: 20%;
 }
 
 div#header {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10%;
-  background-color: rgb(99, 91, 91);
-  text-align: center;
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+width: 100%;
+height: 10%;
+background-color: rgb(99, 91, 91);
+text-align: center;
 }
 div#header #gold   {
-  position: absolute;
-  top: 0;
-  left: 33%;
-  width: 33%;
-  height: 100%;
-  background-color: rgb(99, 91, 91);
+position: absolute;
+top: 0;
+left: 33%;
+width: 33%;
+height: 100%;
+background-color: rgb(99, 91, 91);
 }
 #body {
-  position: absolute;;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  height: 100%;
+position: absolute;;
+top: 10%;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
 }
 
 
 .container {  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "g1 g5"
-    "g2 g6"
-    "g3 g7"
-    "g4 g8";
-  width: 100%;
-  height: 90%;
-  padding: 3%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 5px 5px;
+grid-auto-flow: row;
+grid-template-areas:
+  "g1 g5"
+  "g2 g6"
+  "g3 g7"
+  "g4 g8";
+width: 100%;
+height: 90%;
+padding: 3%;
 
-  background-color: aquamarine;
+background-color: aquamarine;
 }
 
 .g1 { grid-area: g1;border: 4px solid rgb(0, 0, 0); border-radius: 10px;}
@@ -80,71 +81,116 @@ div#header #gold   {
 
 .g8 { grid-area: g8;border: 4px solid black; border-radius: 10px; }
 
-#ImgWood {
-  width: 50%;
-  height: 50%;
+.Img {
+width: 50%;
+height: 50%;
+color: white;
+transition: ease-in-out .5s;
 
 }
-#BWood {
-  position: relative;
-  top: 10%;
-  left: 2.5%;
-  width: 20%;
-  height: 80%;
-  border-radius: 10px;
-  background-color: aquamarine;
-  float: left;
+.przyciski {
+background: transparent;
+position: relative;
+float: left;
+top: 10%;
+left: 2.5%;
+width: 20%;
+height: 80%;
+border-radius: 10px;
+cursor: pointer;
+border: 3px solid black;;
+box-shadow: 0 0 0 white;
+transition: ease-in .5s;
+
+}
+.przyciski:hover {
+  box-shadow: 0 0 20px #fff;
+  inset: 100% 0 #fff;
+  border: white solid 3px;
+  transition: ease-in-out .2s;
 }
 .Ulepsz {
-  position: relative;
-  float: left;
-  background-color: aquamarine;
-  width: 25%;
-  border-radius: 10px;
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+float: left;
+background: transparent;
+width: 25%;
+border-radius: 10px;
+border: 3px solid black;
+box-shadow: 0 0 0 white;
+font-size: 12px;
+transition: ease-in .5s;
+cursor: pointer;
+letter-spacing: 1px;
+font-weight: 400;
+}
+.Ulepsz:hover {
+  box-shadow: 0 0 20px #fff;
+  inset: 200px 0 white;
+  border: white solid 3px;
+  transition: ease-in-out .2s;
+  
+}
+button.Ulepsz p {
+  color: black;
+  text-decoration: none;
+  transition: ease-in-out .2s;
+}
+
+.Ulepsz:hover p{
+  color: white;
+
 }
 .containerW { 
-  position: relative;
-  top: 10%;
-  left: 2.5%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 3px 3px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "gora"
-    "dol";
-  width: 75%;
-  height: 75%;
-  
+position: relative;
+top: 10%;
+left: 2.5%;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 3px 3px;
+grid-auto-flow: row;
+grid-template-areas:
+  "gora"
+  "dol";
+width: 75%;
+height: 75%;
+
 }
 
 .dol { grid-area: dol; }
 
 .gora { grid-area: gora; }
 
-#pasekWood {
-  width: 100%;
-  float: left;
-  animation-name: pasek;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+.pasek {
+width: 100%;
+float: left;
+animation-name: pasek;
+animation-duration: 1s;
+animation-iteration-count: infinite;
 }
 #WoodInfo {
-  position: absolute;
-  top:0;
-  left: 45%;
-  z-index: 100;
+position: absolute;
+top:0;
+left: 45%;
+z-index: 100;
 
 }
 .Timer{
-  position: relative;;
-  top:10%;
-  left:25%;
-  float: left;
-  border: 2px solid black;
-  color: black;
-  font-size: 20px;
-  padding: 5px;
+position: relative;;
+top:10%;
+left:25%;
+float: left;
+border: 2px solid black;
+color: black;
+font-size: 20px;
+padding: 5px;
+}
+#OreInfo {
+position: absolute;
+top:0;
+left: 45%;
+z-index: 100;
 }
