@@ -1,14 +1,15 @@
 @keyframes pasek {
-  0%   {width: 0%; background-color: green;height: 100%;border-radius: 10px;}
-  100%   {width: 100%; background-color: green;height: 100%;border-radius: 10px;}
-
+  0%   {width: 0%; background-color: yellow;height: 100%;border-radius: 10px;}
+  100%   {width: 100%; background-color: yellow;height: 100%;border-radius: 10px;}
 }
+
 #all {
 position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  
 }
 p#p1  {
 color: gold;
@@ -25,7 +26,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 10%;
-background-color: rgb(99, 91, 91);
+background-color: rgb(36, 36, 36);
 text-align: center;
 }
 div#header #gold   {
@@ -34,7 +35,7 @@ top: 0;
 left: 33%;
 width: 33%;
 height: 100%;
-background-color: rgb(99, 91, 91);
+background-color: rgb(36, 36, 36);
 }
 #body {
 position: absolute;;
@@ -43,6 +44,7 @@ left: 0;
 width: 100%;
 height: 100%;
 display: flex;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -62,7 +64,7 @@ width: 100%;
 height: 90%;
 padding: 3%;
 
-background-color: aquamarine;
+background-color: rgb(36, 36, 36);
 }
 
 .g1 { grid-area: g1;border: 4px solid rgb(0, 0, 0); border-radius: 10px;}
@@ -164,12 +166,10 @@ height: 75%;
 
 .gora { grid-area: gora; }
 
-.pasek {
+.Pasek {
 width: 100%;
 float: left;
-animation-name: pasek;
-animation-duration: 1s;
-animation-iteration-count: infinite;
+
 }
 #WoodInfo {
 position: absolute;
@@ -179,9 +179,9 @@ z-index: 100;
 
 }
 .Timer{
-position: relative;;
-top:10%;
-left:25%;
+position: relative;
+top: 0%;
+left:40%;
 float: left;
 border: 2px solid black;
 color: black;
@@ -193,4 +193,11 @@ position: absolute;
 top:0;
 left: 45%;
 z-index: 100;
+}
+.Level {
+  position: absolute;
+  left: 30%;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 10px;
 }
